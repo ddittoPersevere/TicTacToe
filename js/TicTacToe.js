@@ -247,61 +247,61 @@ const checkWin = function(box){
     $('#box1Text').addClass('font-italic text-muted')
     $('#box2Text').addClass('font-italic text-muted')
     $('#box3Text').addClass('font-italic text-muted')
-    $('#win').html('<div class="alert alert-warning text-center" role="alert"><strong>' + $('#box1Text').text() + '</strong> Wins!<br>Reset for new game...</div>')
+    $('#win').html('<div class="alert alert-warning text-center" role="alert"><strong>' + $('#box1Text').text() + '</strong> Wins!<br>Refresh page for new game...</div>')
     gameOver = true
   }
   else if($('#box4Text').text() != "" && $('#box4Text').text() == $('#box5Text').text() && $('#box5Text').text() == $('#box6Text').text()){
     $('#box4Text').addClass('font-italic text-muted')
     $('#box5Text').addClass('font-italic text-muted')
     $('#box6Text').addClass('font-italic text-muted')
-    $('#win').html('<div class="alert alert-warning text-center" role="alert"><strong>' + $('#box4Text').text() + '</strong> Wins!<br>Reset for new game...</div>')
+    $('#win').html('<div class="alert alert-warning text-center" role="alert"><strong>' + $('#box4Text').text() + '</strong> Wins!<br>Refresh page for new game...</div>')
     gameOver = true
   }
   else if($('#box7Text').text() != "" && $('#box7Text').text() == $('#box8Text').text() && $('#box8Text').text() == $('#box9Text').text()){
     $('#box7Text').addClass('font-italic text-muted')
     $('#box8Text').addClass('font-italic text-muted')
     $('#box9Text').addClass('font-italic text-muted')
-    $('#win').html('<div class="alert alert-warning text-center" role="alert"><strong>' + $('#box7Text').text() + '</strong> Wins!<br>Reset for new game...</div>')
+    $('#win').html('<div class="alert alert-warning text-center" role="alert"><strong>' + $('#box7Text').text() + '</strong> Wins!<br>Refresh page for new game...</div>')
     gameOver = true
   }
   else if($('#box1Text').text() != "" && $('#box1Text').text() == $('#box4Text').text() && $('#box4Text').text() == $('#box7Text').text()){
     $('#box1Text').addClass('font-italic text-muted')
     $('#box4Text').addClass('font-italic text-muted')
     $('#box7Text').addClass('font-italic text-muted')
-    $('#win').html('<div class="alert alert-warning text-center" role="alert"><strong>' + $('#box1Text').text() + '</strong> Wins!<br>Reset for new game...</div>')
+    $('#win').html('<div class="alert alert-warning text-center" role="alert"><strong>' + $('#box1Text').text() + '</strong> Wins!<br>Refresh page for new game...</div>')
     gameOver = true
   }
   else if($('#box2Text').text() != "" && $('#box2Text').text() == $('#box5Text').text() && $('#box5Text').text() == $('#box8Text').text()){
     $('#box2Text').addClass('font-italic text-muted')
     $('#box5Text').addClass('font-italic text-muted')
     $('#box8Text').addClass('font-italic text-muted')
-    $('#win').html('<div class="alert alert-warning text-center" role="alert"><strong>' + $('#box2Text').text() + '</strong> Wins!<br>Reset for new game...</div>')
+    $('#win').html('<div class="alert alert-warning text-center" role="alert"><strong>' + $('#box2Text').text() + '</strong> Wins!<br>Refresh page for new game...</div>')
     gameOver = true
   }
   else if($('#box3Text').text() != "" && $('#box3Text').text() == $('#box6Text').text() && $('#box6Text').text() == $('#box9Text').text()){
     $('#box3Text').addClass('font-italic text-muted')
     $('#box6Text').addClass('font-italic text-muted')
     $('#box9Text').addClass('font-italic text-muted')
-    $('#win').html('<div class="alert alert-warning text-center" role="alert"><strong>' + $('#box3Text').text() + '</strong> Wins!<br>Reset for new game...</div>')
+    $('#win').html('<div class="alert alert-warning text-center" role="alert"><strong>' + $('#box3Text').text() + '</strong> Wins!<br>Refresh page for new game...</div>')
     gameOver = true
   }
   else if($('#box1Text').text() != "" && $('#box1Text').text() == $('#box5Text').text() && $('#box5Text').text() == $('#box9Text').text()){
     $('#box1Text').addClass('font-italic text-muted')
     $('#box5Text').addClass('font-italic text-muted')
     $('#box9Text').addClass('font-italic text-muted')
-    $('#win').html('<div class="alert alert-warning text-center" role="alert"><strong>' + $('#box1Text').text() + '</strong> Wins!<br>Reset for new game...</div>')
+    $('#win').html('<div class="alert alert-warning text-center" role="alert"><strong>' + $('#box1Text').text() + '</strong> Wins!<br>Refresh page for new game...</div>')
     gameOver = true
   }
   else if($('#box3Text').text() != "" && $('#box3Text').text() == $('#box5Text').text() && $('#box5Text').text() == $('#box7Text').text()){
     $('#box3Text').addClass('font-italic text-muted')
     $('#box5Text').addClass('font-italic text-muted')
     $('#box7Text').addClass('font-italic text-muted')
-    $('#win').html('<div class="alert alert-warning text-center" role="alert"><strong>' + $('#box3Text').text() + '</strong> Wins!<br>Reset for new game...</div>')
+    $('#win').html('<div class="alert alert-warning text-center" role="alert"><strong>' + $('#box3Text').text() + '</strong> Wins!<br>Refresh page for new game...</div>')
     gameOver = true
   }
 //Checks for scenario that would result in DRAW
   else if(freeSpaces.length == 0){
-    $('#win').html('<div class="alert alert-warning text-center" role="alert"><strong>Draw!</strong><br>Reset for new game...</div>')
+    $('#win').html('<div class="alert alert-warning text-center" role="alert"><strong>Draw!</strong><br>Refresh page for new game...</div>')
     gameOver = true
   }
 }
@@ -331,16 +331,4 @@ $('#selectX').on('click', function(){
   computer = "O"
   $('#select').addClass('d-none')
   $('#container').removeClass('d-none')
-})
-$('#reset').on('click', function(e){
-  e.preventDefault()
-  $('#box1Text').text() = ""
-  $('#box2Text').text() = ""
-  $('#box3Text').text() = ""
-  $('#box4Text').text() = ""
-  $('#box5Text').text() = ""
-  $('#box6Text').text() = ""
-  $('#box7Text').text() = ""
-  $('#box8Text').text() = ""
-  $('#box9Text').text() = ""
 })
