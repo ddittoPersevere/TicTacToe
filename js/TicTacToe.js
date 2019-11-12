@@ -332,3 +332,14 @@ $('#selectX').on('click', function(){
   $('#select').addClass('d-none')
   $('#container').removeClass('d-none')
 })
+$('#reset').on('click', function(){
+  $('#box1Text').text() = ""
+  $('#box2Text').text() = ""
+  $('#box3Text').text() = ""
+  $('#box4Text').text() = ""
+  $('#box5Text').text() = ""
+  $('#box6Text').text() = ""
+  $('#box7Text').text() = ""
+  $('#box8Text').text() = ""
+  $('#box9Text').text() = ""
+})
